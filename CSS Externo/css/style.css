@@ -1,0 +1,24 @@
+body{
+    background: black;
+}
+
+/* Chamando por ID -- Sinal de maior (>) Implica somente tags filhas*/
+#div1 > h1 {
+    color: orange;
+}
+
+/* Chamando por ID -- Sem sinal implica para procurar a tag dentro da div
+Não necessariamente sendo filha direta */
+#div1 h2 {
+    color: aqua;
+}
+
+/*Chamando por classe*/
+.div1 {
+    color: white;
+}
+
+/*ID só deve ser usado somente para uma TAG
+  Para ser usado no javascript.
+  Caso seja necessário usar em mais de uma tag
+  Utilizar a tag CLASS para estilização.*/

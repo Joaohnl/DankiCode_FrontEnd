@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS - Formulários</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Meu Formulário</legend>
+            <div><input type="text" name="nome" placeholder="Nome"></div>
+            <div><input type="text" name="telefone" placeholder="Telefone"></div>
+            <div><input type="text" name="email" placeholder="E-mail"></div>
+            <div>
+                <select name="cidade" id="cidade">
+                    <option selected disabled>Qual cidade você mora?</option>
+                    <option>Santos</option>
+                    <option>São Paulo</option>
+                    <option>Rio de Janeiro</option>
+                </select>
+            </div>
+
+            <h2>Qual a sua idade?</h2>
+            <div class="inputRadio">
+                <div><input type="radio" name="cidade"><span>18+</span></div>
+                <div><input type="radio" name="cidade"><span>30+</span></div>
+                <div><input type="radio" name="cidade"><span>45+</span></div>
+            </div>
+
+            <h2>O que você gosta de comer?</h2>
+            <div class="inputCheckbox">
+                <div><input type="checkbox" name="comida"><span>Fruta</span></div>
+                <div><input type="checkbox" name="comida"><span>Fast Food</span></div>
+                <div><input type="checkbox" name="comida"><span>Salada</span></div>
+            </div>
+
+            <div>
+                <textarea name="text" cols="30" rows="10" placeholder="Alguma observação?"></textarea>
+            </div>
+
+            <div><input type="submit" value="Enviar!"></div>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

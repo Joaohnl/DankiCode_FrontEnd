@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+/*Estilo para o conteúdo do nosso site*/
+
+
+
+.artigo {
+    width: 100%;
+    min-width: 500px;
+    height: auto;
+    text-align: center;
+    background-color: pink;
+}
+
+.artigo h1 {
+    color: rgb(66, 149, 244);
+    font-size: 35px;
+    font-family: "Courier New";
+    font-variant: "small caps";
+
+}
+
+.artigo p {
+    color: #646464;
+    font-size: 17px;
+    font-family: tahome;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 10px;
+    line-height: 40px;
+}

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+/*É possível utilizar vírgula para 
+atribuir propriedades a mais de um elemento*/
+.lista, .lista2 {
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+.lista li, .lista2 li {
+    color: green;
+    font-size: #4b4b4b;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/*
+.produto3 {} Não funcionaria pois .lista li é mais específico
+Atribui somente ao produto 3 da lista 1 e não da lista 2
+*/
+.lista .produto3 {
+    color: red;
+    font-weight: bold;
+}
+
+/*ol vem por padrão com a list-style-type: decimal*/
+ol {
+    list-style-position: inside;
+}

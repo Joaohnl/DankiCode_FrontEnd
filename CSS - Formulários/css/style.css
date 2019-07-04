@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+form {
+    width: 96%;
+    max-width: 600px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+form fieldset {
+    padding: 20px 10px;
+    border: solid 1px gray;
+}
+
+form legend {
+    font-size: 17px;
+    color: rgb(130, 130, 130);
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    outline: 0;
+}
+
+form input[type=text] {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px 13px;
+    margin: 15px auto;
+    border: solid 1px #ccc;
+}
+
+form select {
+    width: calc(80% + 26px);
+    padding: 10px 13px;
+    margin: 15px auto;
+    border: solid 1px #ccc;
+}
+
+h2 {
+    color: rgb(100, 100, 100);
+}
+
+.inputRadio {
+    display: inline-block;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.inputCheckbox {
+    margin: 10px 10px;
+    text-align: left;
+    display: inline-block;
+}
+
+form input[type=radio], form input[type=checkbox] {
+    margin: 5px 5px;
+}
+
+form textarea {
+    resize: none;
+    width: 80%;
+    padding: 5px 5px;
+    margin: 20px 5px;
+    border: solid 1px gray;
+}
+
+form input[type=submit] {
+    padding: 5px 20px;
+    border: solid 1px gray;
+    background-color: darkblue;
+    color: white;
+}
+
+form input[type=submit]:hover {
+    border: solid 1px black;
+
+}
+
