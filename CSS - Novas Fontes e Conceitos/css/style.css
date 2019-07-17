@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Importando fonte do diretório fonts */
+@font-face{
+    font-family: 'Minha fonte';
+    src: url('../fonts/Tangerine-Regular.ttf');
+}
+
+html, body {
+    height: 100%;
+
+    /* Não será aplicado a forms, devido a essa tag já possuir 
+       uma fonte aplicada por padrão */
+    font-family: 'Minha fonte';
+}
+
+/* Aplica a fonte importada para elementos diretamente filhos do form */
+form > * {
+    font-family: 'Minha fonte';
+}
+
+/* Aplica a fonte customizada para todos os elementos dentro de form */
+form * {
+    font-family: 'Minha fonte';
+}
+
+/**Usando a fonte importada do google fonts(importação no head do HTML)
+h2 {
+    font-family: 'Tangerine';
+    font-size: 200px;
+}
+**/
+
+
+
+
+h2 {
+    font-family: 'Minha fonte';
+    font-size: 200px;
+}
+
+.box p {
+    font-family: tahoma;
+}
+
+/* Quando utilizamos o !important o nível de especificação 
+    Não importa */
+.text {
+    font-family: 'Minha fonte' !important;
+}
