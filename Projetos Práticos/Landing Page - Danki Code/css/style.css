@@ -8,6 +8,11 @@ html, body {
     height: 100%;
 }
 
+@font-face{
+    src: url("../fonts/Muli-Regular.ttf");
+    font-family: 'Muli';
+}
+
 /* Customização HEADER */
 
 .header {
@@ -30,6 +35,8 @@ html, body {
     height: 400px;
 }
 
+/* Estilização da lista do Content */
+
 .c_list {
     width: 500px;
     height: 250px;
@@ -44,9 +51,36 @@ html, body {
     margin-left: 5px;
 }
 
+/* Estilização do form do Content */
+
 .c_form {
+    position: relative;
+    top: -15px;
+    border: 6px solid #ccc;
     width: 350px;
-    height: 600px;
+    height: calc(100% + 30px);
     background-color: white;
     padding: 10px 10px;
+    margin-right: 30px;
+    float: right;
+}
+
+.c_form h2, .c_form label {
+    font-weight: normal;
+    color: #999999;
+    font-family: 'Muli';
+}
+
+.c_form h2 {
+    font-size: 21px;
+}
+
+.inputContainer {
+    margin-top: 10px;
+}
+
+.inputContainer label {
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
 }
