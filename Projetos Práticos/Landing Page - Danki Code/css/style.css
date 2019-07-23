@@ -49,6 +49,7 @@ html, body {
 .c_list li {
     margin-bottom: 20px;
     margin-left: 5px;
+    font-size: 16px;
 }
 
 /* Estilização do form do Content */
@@ -77,19 +78,27 @@ html, body {
 
 .inputContainer {
     margin-top: 10px;
-
 }
 
 .inputContainer label {
-    display: inline-block;
-    width: 100%;
-    font-size: 15px;
+    display: block;
+    font-size: 16px;
     margin-top: 10px;
     margin-bottom: 2px;
 }
 
 .c_form p {
     margin-top: 20px;
+    font-size: 14px;
+}
+
+.c_form input[type="text"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 40px;
+    font-family: 'Muli';
+    font-size: 20px;
+    color: rgb(58, 58, 58);
 }
 
 .c_form input[type="submit"] {
@@ -97,7 +106,7 @@ html, body {
     appearance: none;
     width: 100px;
     height: 30px;
-    margin: 30px auto;
+    margin: 25px auto;
     background-color: rgb(44, 49, 121);
     color: white;
     border: solid 1px black;
