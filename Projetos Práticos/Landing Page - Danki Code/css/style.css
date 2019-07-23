@@ -54,6 +54,7 @@ html, body {
 /* Estilização do form do Content */
 
 .c_form {
+    position: relative;
     top: -15px;
     border: 6px solid #ccc;
     width: 350px;
@@ -91,14 +92,14 @@ html, body {
     margin-top: 20px;
 }
 
-.c_form input[type="submit"]{
+.c_form input[type="submit"] {
+    display: block;
     appearance: none;
     width: 100px;
     height: 30px;
-    margin: 20px auto;
+    margin: 30px auto;
     background-color: rgb(44, 49, 121);
     color: white;
     border: solid 1px black;
     cursor: pointer;
-
 }
