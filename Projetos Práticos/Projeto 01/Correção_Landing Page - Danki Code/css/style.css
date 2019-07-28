@@ -15,7 +15,7 @@ html, body {
 }
 
 .center {
-    width: 1280px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -48,8 +48,12 @@ html, body {
     height: calc(100% + 30px);
     float: right;
     background-color: white;
-    border: 2px solid #ccc;
     top: -15px;
+    border: 12px solid rgba(120, 120, 120, 0.5);
+    background-clip: padding-box;
+    /* background-clip: Define o quão longe o background deve se expandir (Cor ou imagem). 
+        No caso acima ele se expand até o padding, o que não inclui a borda. Portanto a borda fica sem o fundo branco */
+    /* background-origin: Especifica a posição de origem de uma imagem de background.  */
 }
 
 .form h2 {
@@ -100,4 +104,48 @@ html, body {
     background-color: #323665;
 }
 
+.container-list {
+    padding: 30px;
+    margin-top: 40px;
+    float: left;
+    width: 619px;
+    height: 270px;
+    background-color: rgba(33, 35, 67, 0.7);
+}
 
+.container-list ul {
+    list-style-position: inside;
+}
+
+.container-list ul li {
+    margin-top: 18px;
+    color: white;
+}
+
+.container-2 {
+    padding: 40px 0;
+    background-color: #DDDDDD;
+    text-align: center;
+}
+
+.container-2 h2 {
+    font-weight: normal;
+}
+
+.container-2 p {
+    width: 698px;
+    display: inline-block;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.arrow {
+    position: relative;
+    top: 60px;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/arrow.png');
+    background-size: 100% 100%;    
+}
