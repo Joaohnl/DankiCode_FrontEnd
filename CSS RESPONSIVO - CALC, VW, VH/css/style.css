@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+/* 
+    CALC SE UTILIZA PARA CALCULO UTILIZANDO DIFERENTES MÉTRICAS
+    CALC UTILIZADO PARA MANTER O CONTENT AO LADO DA SIDEBAR UTILIZANDO PORCENTAGEM E REDUZINDO O TAMANHO DA SIDEBAR
+    Outros usos:
+    calc(100% / 3)
+    calc((100% / 4) + 20px)
+
+
+.sidebar {
+    width: 300px;
+    height: 100%;
+    background-color: #000000;
+    float: left;
+}
+
+.content {
+    float: left;
+    width: calc(100% - 300px);
+    height: 100%;
+    background-color: #ccc;
+} */
+
+/* 
+    VW = Viewport Width = Largura do navegador (viewport) 100 vw = 100% da largura do navegador
+    VH = Viewport Height = Altura do navegador            100 vh = 100% de altura do navegador
+
+    TOMAR CUIDADO AO UTILIZAR O VW ou VH
+    NÃO CONSIDERA SCROLLBARS
+*/
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+
