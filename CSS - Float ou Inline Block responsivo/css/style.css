@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    width: 98%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #CCC;
+}
+
+.box {
+    border: 1px solid black;
+    width: 33.3%;
+    height: 300px;
+    background-color: green;
+    float: left;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        text-align: center;
+
+    }
+    .box {
+        float: none;
+        width: 50%;
+        display: inline-block;
+        margin-left: -4px;
+        margin-right: -4px;
+        margin-bottom: -4px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .container {
+        text-align: center;
+    }
+    .box {
+        float: none;
+        width: 100%;
+        display: inline-block;
+        margin-left: -4px;
+        margin-right: -4px;
+        margin-bottom: -4px;
+    }
+}
