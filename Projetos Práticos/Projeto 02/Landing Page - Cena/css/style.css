@@ -76,12 +76,31 @@ form {
 }
 
 form span {
-    font-size: 25px;
+    display: block;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 input[type="text"] {
+    font-size: 14px;
+    padding: 2%;
     display: block;
-    width: 90%;
-    height: 30px;
+    width: 95%;
+    height: 35px;
     margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input[type=text]:focus {
+    outline: 2px solid #bbb;
+}
+
+input[type="submit"] {
+    width: 75%;
+    border: 0;
+    margin: 10% auto;
+    height: 35px;
+    background-color: blue;
+    color: white;
+    appearance: none;
 }
