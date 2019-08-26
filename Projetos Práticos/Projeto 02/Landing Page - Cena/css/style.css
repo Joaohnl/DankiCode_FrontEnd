@@ -100,9 +100,11 @@ input[type="submit"] {
     width: 100%;
     border: 0;
     margin: 10% auto;
-    height: 35px;
+    height: 40px;
     background-color: #471ddf;
     color: white;
     appearance: none;
     text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
 }
