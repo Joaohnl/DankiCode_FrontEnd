@@ -7,3 +7,42 @@
 html, body {
     height: 100%;
 }
+
+
+.center {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: green;
+}
+
+.logo {
+    width: 128px;
+    height: 64px;
+    background-color: #ccc;
+}
+
+header {
+    height: 500px;
+    background-image: url("../img/capa.png");
+    background-size: cover;
+    padding: 2% 4%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+header li > a {
+    color: white;
+    text-decoration: none;
+    margin: 2%;
+}
