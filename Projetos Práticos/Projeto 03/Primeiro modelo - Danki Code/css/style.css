@@ -10,10 +10,8 @@ html, body {
 
 
 .center {
-    width: 100%;
     max-width: 768px;
     margin: 0 auto;
-    background-color: green;
 }
 
 .logo {
@@ -23,6 +21,8 @@ html, body {
 }
 
 header {
+    display: flex;
+    flex-flow: row wrap;
     height: 500px;
     background-image: url("../img/capa.png");
     background-size: cover;
@@ -30,9 +30,13 @@ header {
 }
 
 nav {
+    flex-basis: 100%;
+    align-self: flex-start;
+    justify-self: flex-start;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: pink;
 }
 
 nav > ul > li {
@@ -45,4 +49,11 @@ header li > a {
     color: white;
     text-decoration: none;
     margin: 2%;
+}
+
+.chamada {
+    flex-basis: 35%;
+    align-self: center;
+    justify-self: flex-end;
+    color: white;
 }
