@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html, body {
@@ -21,9 +22,7 @@ html, body {
 }
 
 header {
-    display: flex;
-    flex-flow: row wrap;
-    height: 500px;
+    height: 600px;
     background-image: url("../img/capa.png");
     background-size: cover;
     padding: 2% 4%;
@@ -31,18 +30,20 @@ header {
 
 nav {
     flex-basis: 100%;
-    align-self: flex-start;
-    justify-self: flex-start;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    background-color: pink;
+}
+
+nav > .logo {
+    text-align: center;
 }
 
 nav > ul > li {
     list-style-type: none;
     display: inline-block;
-    margin: 5px;
+    padding: 5px;
 }
 
 header li > a {
@@ -52,8 +53,32 @@ header li > a {
 }
 
 .chamada {
-    flex-basis: 35%;
-    align-self: center;
-    justify-self: flex-end;
+    width: 45%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
     color: white;
+}
+
+.chamada > h1 {
+    font-weight: normal;
+    font-size: 35px;
+}
+
+.chamada > h4 {
+    font-weight: normal;
+}
+
+.chamada2 {
+    height: 250px;
+    background-color: #472663;
+}
+
+.chamada2 .chamada2Text {
+    padding-top: 40px;
+    color: white;
+}
+
+.chamada2 .chamada2Text ul {
+    list-style-type: none;
 }
