@@ -70,34 +70,56 @@ header li > a {
 }
 
 .chamada2 {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
     height: 250px;
     background-color: #472663;
 }
 
+.chamada2 .center {
+    height: 250px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .chamada2 .chamada2Text {
+    width: 60%;
     color: white;
 }
 
 .chamada2 .chamada2Text h1 {
-    font-size: 30px;
+    font-weight: normal;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
 .chamada2 .chamada2Text ul {
-    list-style-type: none;
+    list-style-position: inside;
+}
+
+.chamada2 input[type="button"] {
+    border: 0;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    background-color: #ff703e;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 30px;
 }
 
 .chamada2img {
-    width: 50%;
+    width: 40%;
     height: 100%;
-    
 }
 
 .chamada2img .deviceImg {
-    height: 100%;
+    width: 140%;
+    height: 120%;
+    position: relative;
+    left: -40%;
+    top: -20%;
     background-image: url("../img/device.png");
-    
+    background-size: cover;
 }
