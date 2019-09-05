@@ -70,15 +70,34 @@ header li > a {
 }
 
 .chamada2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     height: 250px;
     background-color: #472663;
 }
 
 .chamada2 .chamada2Text {
-    padding-top: 40px;
     color: white;
+}
+
+.chamada2 .chamada2Text h1 {
+    font-size: 30px;
 }
 
 .chamada2 .chamada2Text ul {
     list-style-type: none;
+}
+
+.chamada2img {
+    width: 50%;
+    height: 100%;
+    
+}
+
+.chamada2img .deviceImg {
+    height: 100%;
+    background-image: url("../img/device.png");
+    
 }
