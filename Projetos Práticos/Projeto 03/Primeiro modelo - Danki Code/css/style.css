@@ -11,13 +11,16 @@ html, body {
 
 
 .center {
-    max-width: 768px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .logo {
-    width: 128px;
-    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 96px;
     background-color: #ccc;
 }
 
@@ -50,32 +53,34 @@ header li > a {
     color: white;
     text-decoration: none;
     margin: 2%;
+    font-size: 20px;
 }
 
 .chamada {
     width: 45%;
-    position: absolute;
-    left: 50%;
-    top: 40%;
+    position: relative;
+    left: 30%;
+    top: 30%;
     color: white;
 }
 
 .chamada > h1 {
     font-weight: normal;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .chamada > h4 {
     font-weight: normal;
+    font-size: 14px;
 }
 
 .chamada2 {
-    height: 250px;
+    height: 350px;
     background-color: #472663;
 }
 
 .chamada2 .center {
-    height: 250px;
+    height: 350px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -83,14 +88,15 @@ header li > a {
 }
 
 .chamada2 .chamada2Text {
+    margin: 1%;
     width: 60%;
     color: white;
 }
 
 .chamada2 .chamada2Text h1 {
     font-weight: normal;
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 .chamada2 .chamada2Text ul {
@@ -100,7 +106,7 @@ header li > a {
 .chamada2 input[type="button"] {
     border: 0;
     width: 150px;
-    height: 30px;
+    height: 38px;
     text-align: center;
     background-color: #ff703e;
     color: white;
@@ -126,37 +132,42 @@ header li > a {
 
 section.chamada3 {
     width: 100%;
-    height: 400px;
+    height: 600px;
     text-align: center;
     color: #472663;
 }
 
 section.chamada3 h1 {
     font-weight: normal;
-    font-size: 28px;
+    font-size: 40px;
     margin-top: 80px;
     margin-bottom: 20px;
+}
+
+section.chamada3 p {
+    font-size: 14px;
 }
 
 section.chamada3 .chamada3mockup {
     position: relative;
     z-index: 1;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 100px;
     width: 90%;
-    height: 400px;
+    height: 600px;
     background-image: url("../img/mockup.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section.nossoTime {
     display: flex;
     width: 100%;
-    height: 350px;
+    height: 500px;
 }
 
 section.nossoTime .nossoTimeDesc {
-    padding: 4%;
+    padding: 5% 2%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
@@ -168,17 +179,94 @@ section.nossoTime .nossoTimeDesc {
 }
 
 .nossoTimeText {
-    width: 70%;;
+    width: 60%;
 }
 
 section.nossoTime h1 {
     font-weight: normal;
     font-style: italic;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 section.nossoTime .nossoTimePessoas {
+    padding: 5% 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
     width: 50%;
     height: 100%;
+    background-color: #f4f8fb;
+}
+
+section.nossoTime p {
+    margin-top: 10px;
+}
+
+section.nossoTime .desenvImg {
+    width: 50px;
+    height: 50px;
     background-color: #ccc;
+}
+
+section.contato {
+    width: 100%;
+    height: 600px;
+    background-color: #472663;
+}
+
+section.contato .center {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.contato .contato {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 85%;
+    width: 50%;
+    color: white;
+}
+
+section.contato .contato input {
+    width: 70%;
+    height: 40px;    
+    margin-top: 10px;
+    padding: 10px;
+}
+
+section.contato .contato textarea {
+    padding: 10px;
+    width: 70%;
+    resize: none;
+    margin-top: 10px;
+}
+
+section.contato .contato input[type="button"] {
+    border: 0;
+    width: 100px;
+    height: 38px;
+    text-align: center;
+    background-color: #ff703e;
+    cursor: pointer;
+    border-radius: 30px;
+    color: white;
+    margin-top: 15px;
+}
+
+section.contato .contato p {
+    width: 70%;
+    margin: 20px 0;
+}
+
+section.contato .Mapa {
+    width: 50%;
+}
+section.contato h1 {
+    font-weight: normal;
+    font-size: 40px;
 }
