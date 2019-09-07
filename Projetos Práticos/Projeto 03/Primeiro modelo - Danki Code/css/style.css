@@ -65,12 +65,12 @@ header li > a {
 }
 
 .chamada > h1 {
-    font-weight: normal;
+    font-weight: 300;
     font-size: 40px;
 }
 
 .chamada > h4 {
-    font-weight: normal;
+    font-weight: 300;
     font-size: 14px;
 }
 
@@ -94,7 +94,7 @@ header li > a {
 }
 
 .chamada2 .chamada2Text h1 {
-    font-weight: normal;
+    font-weight: 300;
     font-size: 40px;
     margin-bottom: 20px;
 }
@@ -138,7 +138,7 @@ section.chamada3 {
 }
 
 section.chamada3 h1 {
-    font-weight: normal;
+    font-weight: 300;
     font-size: 40px;
     margin-top: 80px;
     margin-bottom: 20px;
@@ -183,7 +183,7 @@ section.nossoTime .nossoTimeDesc {
 }
 
 section.nossoTime h1 {
-    font-weight: normal;
+    font-weight: 300;
     font-style: italic;
     font-size: 24px;
 }
@@ -210,6 +210,7 @@ section.nossoTime .desenvImg {
 }
 
 section.contato {
+    padding: 1%;
     width: 100%;
     height: 600px;
     background-color: #472663;
@@ -219,7 +220,7 @@ section.contato .center {
     height: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -228,8 +229,13 @@ section.contato .contato {
     flex-flow: column nowrap;
     justify-content: space-between;
     height: 85%;
-    width: 50%;
+    width: 60%;
     color: white;
+}
+
+section.contato h1 {
+    font-weight: 300;
+    font-size: 40px;
 }
 
 section.contato .contato input {
@@ -237,6 +243,7 @@ section.contato .contato input {
     height: 40px;    
     margin-top: 10px;
     padding: 10px;
+    font-size: 14px;
 }
 
 section.contato .contato textarea {
@@ -244,6 +251,7 @@ section.contato .contato textarea {
     width: 70%;
     resize: none;
     margin-top: 10px;
+    font-size: 14px;
 }
 
 section.contato .contato input[type="button"] {
@@ -256,6 +264,8 @@ section.contato .contato input[type="button"] {
     border-radius: 30px;
     color: white;
     margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 section.contato .contato p {
@@ -263,10 +273,22 @@ section.contato .contato p {
     margin: 20px 0;
 }
 
-section.contato .Mapa {
-    width: 50%;
+section.contato .visita {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    color: white;
+    width: 40%;
+    height: 85%;
 }
+
 section.contato h1 {
-    font-weight: normal;
+    font-weight: 300;
     font-size: 40px;
+}
+ 
+section.contato .visita .mapa {
+    width: 100%;
+    height: 400px;
+    background-color: #ccc;
 }
