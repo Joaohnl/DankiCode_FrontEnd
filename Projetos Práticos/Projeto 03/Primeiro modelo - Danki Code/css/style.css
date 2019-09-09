@@ -210,7 +210,7 @@ section.nossoTime .desenvImg {
 }
 
 section.contato {
-    padding: 1%;
+    padding: 2%;
     width: 100%;
     height: 600px;
     background-color: #472663;
@@ -291,4 +291,21 @@ section.contato .visita .mapa {
     width: 100%;
     height: 400px;
     background-color: #ccc;
+}
+
+footer {
+    padding: 2%;
+    width: 100%;
+    height: 100px;
+    background-color: #1a2124;
+}
+
+footer .flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
 }
