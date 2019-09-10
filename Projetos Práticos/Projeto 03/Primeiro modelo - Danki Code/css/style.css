@@ -99,8 +99,14 @@ header li > a {
     margin-bottom: 20px;
 }
 
+.chamada2 p {
+    font-size: 14px;
+}
+
 .chamada2 .chamada2Text ul {
     list-style-position: inside;
+    margin-top: 10px;
+    font-size: 14px;
 }
 
 .chamada2 input[type="button"] {
@@ -308,4 +314,36 @@ footer .flex {
     justify-content: space-around;
     align-items: center;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .chamada {
+        width: 90%;
+        position: static;
+        margin-top: 20%;
+        text-align: center;
+    }
+
+    .chamada2 {
+        width: 100%;
+    }
+    
+    .chamada2 .chamada2Text {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .chamada2img {
+        display: none;
+    }
+
+    .chamada2 .chamada2Text ul {
+        list-style-position: outside;
+        padding-left: 50px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
 }
