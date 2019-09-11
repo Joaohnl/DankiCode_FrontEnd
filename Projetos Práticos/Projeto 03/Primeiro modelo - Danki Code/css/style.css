@@ -168,6 +168,8 @@ section.chamada3 .chamada3mockup {
 
 section.nossoTime {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     height: 500px;
 }
@@ -185,7 +187,12 @@ section.nossoTime .nossoTimeDesc {
 }
 
 .nossoTimeText {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
     width: 60%;
+    height: 40%;
 }
 
 section.nossoTime h1 {
@@ -210,9 +217,13 @@ section.nossoTime p {
 }
 
 section.nossoTime .desenvImg {
-    width: 50px;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    flex-basis: 50px;
     height: 50px;
     background-color: #ccc;
+    border-radius: 50px;
 }
 
 section.contato {
@@ -316,7 +327,7 @@ footer .flex {
     color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .chamada {
         width: 90%;
         position: static;
@@ -345,5 +356,25 @@ footer .flex {
         padding-left: 50px;
         margin-top: 10px;
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.chamada3 {
+        height: 250px;
+    }
+
+    .chamada3mockup {
+        display: none;
+    }
+
+    section.nossoTime {
+        height: 250px;
+    }
+
+    .nossoTimeText {
+        padding: 2%;
+        width: 100%;
+        height: 100%;
     }
 }
