@@ -226,6 +226,21 @@ section.nossoTime .desenvImg {
     border-radius: 50px;
 }
 
+section.nossoTime .slider-bullets {
+    width: 100%;
+    height: 14px;
+    margin-top: 10px;
+}
+
+section.nossoTime .slider-bullets span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
 section.contato {
     padding: 2%;
     width: 100%;
@@ -306,7 +321,7 @@ section.contato h1 {
  
 section.contato .visita .mapa {
     width: 100%;
-    height: 400px;
+    height: auto;
     background-color: #ccc;
 }
 
