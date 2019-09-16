@@ -95,7 +95,7 @@ header li > a {
 
 .chamada2 .chamada2Text h1 {
     font-weight: 300;
-    font-size: 40px;
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
@@ -308,7 +308,7 @@ section.contato .contato p {
 section.contato .visita {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: white;
     width: 40%;
     height: 85%;
@@ -321,14 +321,14 @@ section.contato h1 {
  
 section.contato .visita .mapa {
     width: 100%;
-    height: auto;
+    padding-top: 100%;
     background-color: #ccc;
 }
 
 footer {
     padding: 2%;
     width: 100%;
-    height: 100px;
+    height: fit-content;
     background-color: #1a2124;
 }
 
@@ -362,6 +362,10 @@ footer .flex {
         width: 100%;
     }
 
+    .chamada2 h1 {
+        text-align: center;
+    }
+
     .chamada2img {
         display: none;
     }
@@ -376,7 +380,13 @@ footer .flex {
 
 @media screen and (max-width: 768px) {
     section.chamada3 {
-        height: 250px;
+        height: auto;
+        padding: 5%;
+    }
+
+    section.chamada3 h1 {
+        margin-bottom: 20px;
+        margin-top: 0;
     }
 
     .chamada3mockup {
@@ -392,4 +402,12 @@ footer .flex {
         width: 100%;
         height: 100%;
     }
+}
+
+@media screen and (max-width: 550px) {
+    nav ul {
+        display: none;
+    }
+    
+
 }
