@@ -200,6 +200,7 @@ section.nossoTime .nossoTimeDesc {
 }
 
 section.nossoTime h1 {
+    order: 0;
     font-weight: 300;
     font-style: italic;
     font-size: 24px;
@@ -217,13 +218,19 @@ section.nossoTime .nossoTimePessoas {
 }
 
 section.nossoTime p {
+    order: 3;
     margin-top: 10px;
+}
+
+section.nossoTime h4 {
+    order: 2;
 }
 
 section.nossoTime .desenvImg {
     position: relative;
     top: 10%;
     left: 10%;
+    order: 1;
     flex-basis: 50px;
     height: 50px;
     background-color: #ccc;
@@ -231,9 +238,8 @@ section.nossoTime .desenvImg {
 }
 
 section.nossoTime .slider-bullets {
-    width: 100%;
     height: 14px;
-    margin-top: 10px;
+    padding: 10px 0;
 }
 
 section.nossoTime .slider-bullets span {
@@ -253,6 +259,7 @@ section.contato {
 }
 
 section.contato .center {
+    width: 100%;
     height: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -277,17 +284,17 @@ section.contato h1 {
 section.contato .contato input {
     width: 70%;
     height: 40px;    
-    margin-top: 10px;
     padding: 10px;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 section.contato .contato textarea {
     padding: 10px;
     width: 70%;
     resize: none;
-    margin-top: 10px;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 section.contato .contato input[type="button"] {
@@ -299,14 +306,14 @@ section.contato .contato input[type="button"] {
     cursor: pointer;
     border-radius: 30px;
     color: white;
-    margin-top: 15px;
     font-weight: bold;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 section.contato .contato p {
     width: 70%;
-    margin: 20px 0;
+    padding: 20px 0;
 }
 
 section.contato .visita {
@@ -324,6 +331,7 @@ section.contato h1 {
 }
  
 section.contato .visita .mapa {
+    margin-top: 10px;
     width: 100%;
     padding-top: 100%;
     background-color: #ccc;
@@ -460,6 +468,10 @@ footer .flex {
         text-decoration: none;
     }
 
+    section.nossoTime {
+        height: auto;
+    }
+
     section.nossoTime .nossoTimeDesc {
         width: 100%;
         height: auto;
@@ -472,13 +484,58 @@ footer .flex {
     }
 
     section.nossoTime .nossoTimePessoas {
+        flex-flow: row wrap;
         width: 100%;
         height: auto;
         justify-content: center;
         align-items: center;
     }
 
-    section.nossoTime .nossoTimePessoas h4 {
+    section.nossoTime .nossoTimePessoas h1 {
         width: 100%;
+        order: 1;
+    }
+
+    section.nossoTime .desenvImg {
+        order: 0;
+        position: relative;
+        top: 0;
+        left: 0%;
+        width: 50%;
+        height: 50px;
+    }
+
+    section.nossoTime .slider-bullets {
+        padding: 0;
+    }
+
+    section.contato {
+        height: auto;
+    }
+
+    section.contato .center {
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.contato .contato {
+        text-align: center;
+        flex-flow: column wrap;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        color: white;
+        padding: 5% 0;
+    }
+
+    section.contato .visita {
+        align-items: center;
+        border-top: 1px solid white;
+        padding: 5% 0;
+        width: 100%;
+        height: auto;
     }
 }
