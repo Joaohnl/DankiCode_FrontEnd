@@ -43,7 +43,7 @@ nav > .logo {
     text-align: center;
 }
 
-nav > ul > li {
+nav > .menu-desktop > li {
     list-style-type: none;
     display: inline-block;
     padding: 5px;
@@ -54,6 +54,10 @@ header li > a {
     text-decoration: none;
     margin: 2%;
     font-size: 20px;
+}
+
+.menu-mobile {
+    display: none;
 }
 
 .chamada {
@@ -404,10 +408,24 @@ footer .flex {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 580px) {
     nav ul {
         display: none;
     }
     
+    .menu-desktop {
+        display: none;
+    }
 
+    .menu-mobile {
+        background-image: url("../img/menu.png");
+        list-style-type: none;
+        display: inline-block;
+        padding: 5px;
+        background-size: contain;
+    }
+
+    .menu-mobile li {
+        border-bottom: 1px solid white;
+    }
 }
