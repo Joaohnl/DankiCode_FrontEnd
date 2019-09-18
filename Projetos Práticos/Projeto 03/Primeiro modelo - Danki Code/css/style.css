@@ -16,12 +16,11 @@ html, body {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 180px;
-    height: 96px;
-    background-color: #ccc;
+    height: 35px;
+    background-image: url("../img/logo-danki.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -39,9 +38,6 @@ header {
     align-items: center;
 }
 
-nav > .logo {
-    text-align: center;
-}
 
 .menu-desktop > ul > li {
     list-style-type: none;
@@ -233,7 +229,8 @@ section.nossoTime .desenvImg {
     order: 1;
     flex-basis: 50px;
     height: 50px;
-    background-color: #ccc;
+    background-image: url("../img/actor1.png");
+    background-size: contain;
     border-radius: 50px;
 }
 
@@ -439,7 +436,7 @@ footer .flex {
         position: absolute;
         background-color: white;
         left: 0;
-        top: 80px;
+        top: 45px;
         text-align: center;
         transition: 1s;
         opacity: 0;
