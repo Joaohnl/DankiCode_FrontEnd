@@ -41,13 +41,13 @@ header > .menu-desktop > ul {
     font-size: 14px;
 }
 
-header li {
+header .menu-desktop li {
     text-align: center;
     width: 100%;
     padding: 1%;
 }
 
-header > nav a {
+header .menu-desktop a {
     text-decoration: none;
     text-transform: uppercase;
     color: gray;
@@ -186,28 +186,10 @@ section.perfil .perfil-texto p {
     }
 
     header .menu-mobile {
+        width: 32px;
+        height: 32px;
         position: relative;
         display: flex;
-    }
-    
-    header .menu-mobile ul {  
-        width: 200%; 
-        position: relative;
-        list-style-type: none;
-        top: 18px;
-        right: 125%; 
-        background-color: #576975;   
-        border: 1px solid #688293;
-        display: none;
-        animation-duration: 1s;
-    }
-
-
-    header .menu-mobile li {
-        border-bottom: 1px solid #688293;
-    }
-
-    header .menu-mobile li a {
-        color: white;
+        cursor: pointer;
     }
 }
