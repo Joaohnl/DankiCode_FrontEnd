@@ -64,18 +64,13 @@ header .menu-mobile {
 /* Inicio do PHOTOGRID */
 
 section.photogrid {
-    width: 100%;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 section.photogrid .photogrid-wrapper {
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     align-items: center;
 }
 
@@ -83,7 +78,9 @@ section.photogrid .img {
     flex: 1;
     width: calc(100% / 6);
     padding-top: calc(100% / 6);
-    background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border: 5px solid white;
     transition: 1s;
 }
@@ -92,6 +89,55 @@ section.photogrid .img:hover {
     flex: 2;
     padding-top: calc(100% / 5); 
 }
+
+.img0 {
+    background-image: url("../img/img.jpg");
+}
+
+.img1 {
+    background-image: url("../img/img1.jpg");
+}
+
+.img2 {
+    background-image: url("../img/img2.jpeg");
+}
+
+.img3 {
+    background-image: url("../img/img3.jpg");
+}
+
+.img4 {
+    background-image: url("../img/img4.jpg");
+}
+
+.img5 {
+    background-image: url("../img/img5.jpg");
+}
+
+.img6 {
+    background-image: url("../img/img6.jpg");
+}
+
+.img7 {
+    background-image: url("../img/img7.jpg");
+}
+
+.img8 {
+    background-image: url("../img/img8.png");
+}
+
+.img9 {
+    background-image: url("../img/img9.jpg");
+}
+
+.img10 {
+    background-image: url("../img/img10.jpg");
+}
+
+.img11 {
+    background-image: url("../img/img11.jpg");
+}
+
 
 /* inicio do SERVICOS */
 
@@ -102,6 +148,7 @@ section.servicos {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white;
 }
 
 section.servicos div:nth-child(1), section.servicos div:nth-child(3) {
@@ -116,14 +163,17 @@ section.servicos div:nth-child(1), section.servicos div:nth-child(3) {
 
 section.servicos div:nth-child(2) {
     width: 40%;
-    padding: 8% 2%;
+    padding: 6% 2%;
     background-color: #688293;
 }
 
+section.servicos h2 {
+    font-weight: normal;
+}
 /* Inicio do PERFIL */
 
 section.perfil {
-    padding: 40px 0;
+    padding: 40px 2%;
 }
 
 section.perfil .center {
@@ -173,13 +223,15 @@ section.perfil .perfil-texto p {
 
 section.videos {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 30px 0;
 }
 
 section.videos .video-container {
     width: 33.3%;
     position: relative;
-    padding-top: 25%;
+    padding-top: 30%;
 }
 
 section.videos iframe {
@@ -196,7 +248,7 @@ section.videos iframe {
 section.tratamentos {
     display: flex;
     flex-flow: row wrap;
-    padding: 30px 0;
+    padding: 30px 2%;
     align-items: center;
     justify-content: center;
     background-color: rgba(204, 204, 204, 0.2);
@@ -214,10 +266,194 @@ section.tratamentos .tratamento-container h2 {
 
 section.tratamentos .tratamento-container p {
     color: #4b4b4b;
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 8px;
 }
 
+/* Inicio dos DEPOIMENTOS */
+
+section.depoimentos {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 30px 2%;
+    text-align: center;
+}
+
+section.depoimentos .depoimento {
+    width: 33.3%;
+}
+
+section.depoimentos .depoimento h2 {
+    font-size: 18px;
+    color: #698293;
+}
+
+section.depoimentos .depoimento > p {
+    font-size: 15px;
+    color: #4b4b4b;
+    margin-top: 8px;
+}
+
+section.depoimentos .depoimento-container{
+    width: 100%;
+    display: flex;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+section.depoimentos .depoimento-container p {
+    font-size: 14px;
+    color: #4b4b4b;
+}
+
+section.depoimentos .depoimento-imagem {
+    margin: 10px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/depoimento1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Inicio do SOCIAL */
+
+section.social {
+    padding: 30px 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #98a5ae;
+}
+
+section.social .social-instagram {
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/inst.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+
+section.social .social-facebook {
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/fb.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+
+section.facebook {
+    background-color: #576975;
+}
+
+section.social p {
+    color: white;
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+/* Inicio da SOCIAL-FOTOS */
+
+section.social-fotos {
+    width: 100%;
+    display: flex;
+}
+
+section.social-fotos .social-fotos-imagem {
+    width: calc(100% / 6);
+    padding-top: calc(100% / 6);
+    border: 5px solid white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Inicio do CONTATO */
+
+section.contato {
+    padding: 30px 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.contato.center {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section.contato form {
+    width: 100%;
+    margin-top: 12px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+section.contato .input-wrapper {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.contato .email {
+    width: 50%;
+}
+
+section.contato .telefone {
+    width: 50%;
+}
+
+section.contato .input-wrapper label {
+    font-size: 13px;
+}
+
+section.contato .input-wrapper input[type="text"] {
+    padding-left: 8px;
+    border: 1px solid #dadada;
+    line-height: 34px;
+    margin-top: 8px;
+}
+
+section.contato .input-wrapper textarea {
+    resize: none;
+    border: 1px solid #dadada;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+section.contato input[type="button"] {
+    width: 25%;
+    height: 34px;
+    border: 0;
+    background-color: #688293;
+    color: white;
+    margin-top: 8px;
+}
+
+/* Inicio do FOOTER */
+
+footer {
+    background-color: #688293;
+    padding: 30px 2%;
+    display: flex;
+}
+
+footer div {
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer div p {
+    margin-top: 8px;
+}
 
 /* Inicio das MEDIA QUERIES */
 
@@ -243,6 +479,27 @@ section.tratamentos .tratamento-container p {
 }
 
 @media screen and (max-width: 680px) {
+    section.servicos {
+        max-width: 800px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    section.servicos div:nth-child(1), section.servicos div:nth-child(3) {
+        width: 60%;
+        padding: 2% 2% 6% 2%;
+        border: 1px solid #dadada;
+        background-position: center 95%;
+    }
+    
+    section.servicos div:nth-child(2) {
+        width: 80%;
+        padding: 5% 2%;
+    }
+
     section.perfil .perfil-texto {
         width: 60%; 
         padding: 0 15px;
@@ -266,13 +523,66 @@ section.tratamentos .tratamento-container p {
         font-size: 14px;
         margin-top: 8px;
     }
+
+    section.depoimentos .depoimento {
+        width: 50%;
+    }
+
+    section.videos .video-container {
+        width: 50%;
+    }
+
+    section.social-fotos {
+        flex-wrap: wrap;
+    }
+    
+    section.social-fotos .social-fotos-imagem {
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+    }
 }
 
 @media screen and (max-width: 580px) {
+    section.perfil .perfil-wrapper {
+        padding-top: 0;
+    }
+    
+    section.perfil .perfil-flex {
+        position: static;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section.perfil .perfil-img {
+        width: 60%;
+        padding-top: 80%;
+        display: inline-block;
+        background-image: url("../img/img_perfil.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    section.perfil .perfil-texto {
+        width: 80%; 
+        padding: 0 30px;
+        text-align: justify;
+    }
+    
     section.tratamentos .tratamento-container p {
         width: 100%;
         color: #4b4b4b;
         font-size: 14px;
         margin-top: 8px;
     }
+
+    section.depoimentos .depoimento {
+        width: 100%;
+    }
+
+    section.videos .video-container {
+        width: 80%;
+        padding-top: 50%;
+    }
+
 }
