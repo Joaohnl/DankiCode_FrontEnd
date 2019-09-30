@@ -10,18 +10,38 @@ html, body {
 
 .center {
     max-width: 800px;
+    margin: 0 auto;
 }
 
 header {
+    padding: 2%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header .logo {
     width: 20%;
+    padding-top: 7.5%;
     background-color: #ccc;
 }
 
 header nav {
     width: 60%;
+}
+
+header nav .menu-desktop {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav li {
+    padding: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
 }
