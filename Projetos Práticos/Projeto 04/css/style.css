@@ -290,7 +290,7 @@ section.depoimentos .depoimento h2 {
     color: #698293;
 }
 
-section.depoimentos .depoimento > p {
+section.depoimentos .depoimento quote {
     font-size: 15px;
     color: #4b4b4b;
     margin-top: 8px;
